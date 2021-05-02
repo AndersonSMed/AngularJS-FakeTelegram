@@ -9,3 +9,25 @@
   width: max(300px, 20%);
   border-right: 1px solid #e9e9e9;
 }
+
+.search-area {
+  padding: 8px;
+  display: flex;
+}
+
+.search-area__input {
+  flex-grow: 1;
+}
+
+/* Shared Components Below */
+
+.fakegram-input {
+  padding: 8px;
+  border: unset;
+  background-color: #e9e9e9;
+  border-radius: 4px;
+}
+
+.fakegram-input:focus {
+  background-color: #fff;
+}
