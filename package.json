@@ -1,0 +1,14 @@
+{
+  "name": "fake-telegram",
+  "version": "0.0.1",
+  "authors": [
+    "Anderson Medeiros <anderson.santos.medeiros@hotmail.com>"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "start": "http-server ."
+  },
+  "dependencies": {
+    "http-server": "^0.12.3"
+  }
+}
