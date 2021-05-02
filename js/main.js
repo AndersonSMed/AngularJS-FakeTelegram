@@ -1,4 +1,4 @@
-var app = angular.module('fakeTelegram', ['ngRoute']);
+var app = angular.module('fakegram', ['ngRoute']);
 
 app.config(['$routeProvider', function($routeProvider) {
   $routeProvider
