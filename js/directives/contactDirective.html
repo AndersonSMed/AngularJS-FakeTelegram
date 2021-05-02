@@ -1,1 +1,7 @@
-{{ contact.name }}
+<div class="contact">
+  <div class="contact__avatar">{{ contact.name | avatar }}</div>
+  <div class="contact__name">{{ contact.name }}</div>
+  <div class="contact__last-message-time">{{ contact.last_message.when_timestamp | date }}</div>
+  <div class="contact__last-message-sender">{{ contact.last_message.sender }}</div>
+  <div class="contact__last-message">{{ contact.last_message.text }}</div>
+</div>
