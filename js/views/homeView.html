@@ -5,12 +5,16 @@
     </div>
     <div>
       <div ng-repeat="contact in contacts">
-        <contact />
+        <contact
+          contact-info="contact"
+          on-select="onSelectContact($index)"
+          selected="openContact.id === contact.id"
+        />
       </div>
     </div>
   </div>
   <div class="fakegram__right-area">
     <img class="chat-background" src="img/forest.png" alt="Forest" />
-    <div class="active-chat"></div>
+    <active-contact ng-if="openContact" contact-info="openContact" />
   </div>
 </div>

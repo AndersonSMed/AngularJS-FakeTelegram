@@ -1,11 +1,14 @@
-<div class="contact">
-  <div class="contact__avatar">{{ contact.name | avatar }}</div>
+<div
+  ng-class="'contact' + (selected ? ' contact--selected' : '')"
+  ng-click="onSelect()"
+>
+  <div class="contact__avatar">{{ contactInfo.name | avatar }}</div>
   <div>
-    <div class="contact__name">{{ contact.name }}</div>
-    <div class="contact__last-message-time">{{ contact.last_message.when_timestamp | date }}</div>
+    <div class="contact__name">{{ contactInfo.name }}</div>
+    <div class="contact__last-message-time">{{ contactInfo.last_message.when_timestamp | date }}</div>
   </div>
   <div>
-    <div class="contact__last-message-sender">{{ contact.last_message.sender | lastMessageSender }}</div>
-    <div class="contact__last-message">{{ contact.last_message.text }}</div>
+    <div class="contact__last-message-sender">{{ contactInfo.last_message.sender | lastMessageSender }}</div>
+    <div class="contact__last-message">{{ contactInfo.last_message.text }}</div>
   </div>
 </div>

@@ -43,9 +43,15 @@
   cursor: pointer;
 }
 
+.contact--selected,
+.contact--selected:hover,
+.contact--selected:active {
+  background-color: #add8e6;
+}
+
 .contact__avatar {
   color: #fff;
-  background: #19a119;
+  background-color: #19a119;
   border-radius: 50%;
   float: left;
   font-size: 1.4em;
