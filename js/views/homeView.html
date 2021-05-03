@@ -4,6 +4,9 @@
       <input type="text" class="fakegram-input search-area__input" placeholder="Search">
     </div>
     <div>
+      <div ng-if="isLoadingContacts">
+        <loader />
+      </div>
       <div ng-repeat="contact in contacts">
         <contact
           contact-info="contact"
