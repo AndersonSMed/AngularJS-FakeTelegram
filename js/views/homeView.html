@@ -15,6 +15,8 @@
   </div>
   <div class="fakegram__right-area">
     <img class="chat-background" src="img/forest.png" alt="Forest" />
-    <active-contact ng-if="openContact" contact-info="openContact" />
+    <div ng-if="openContact">
+      <active-contact contact-info="openContact" />
+    </div>
   </div>
 </div>

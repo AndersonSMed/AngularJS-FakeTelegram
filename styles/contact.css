@@ -1,0 +1,56 @@
+.contact {
+  padding: 8px 16px;
+}
+
+.contact:hover,
+.contact:active {
+  background-color: #f3f3f3;
+  cursor: pointer;
+}
+
+.contact--selected,
+.contact--selected:hover,
+.contact--selected:active {
+  background-color: #add8e6;
+}
+
+.contact__avatar {
+  color: #fff;
+  background-color: #19a119;
+  border-radius: 50%;
+  float: left;
+  font-size: 1.4em;
+  font-weight: 500;
+  margin-right: 8px;
+  padding: 12px;
+}
+
+.contact__name,
+.contact__last-message-time {
+  margin-top: 4px;
+  margin-bottom: 8px;
+}
+
+.contact__name {
+  display: inline-block;
+  font-weight: bold;
+}
+
+.contact__last-message-time {
+  color: #7c7c7c;
+  float: right;
+}
+
+.contact__last-message-sender,
+.contact__last-message {
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
+.contact__last-message-sender {
+  color: #0088cc;
+}
+
+.contact__last-message {
+  color: #7c7c7c;
+}
